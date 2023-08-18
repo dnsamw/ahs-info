@@ -30,6 +30,20 @@
     // --size: 500px;
   }
 }
+.ahsLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    width: 70%;
+  }
+}
 
 .ashApp {
   display: flex;

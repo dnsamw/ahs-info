@@ -1,0 +1,123 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   min-height: 100vh;
+  gap: 30px;
+}
+
+.headerContainer {
+  display: flex;
+  height: 10vh;
+  //   position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h4 {
+    font-size: 1.5rem;
+  }
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 100px;
+    border: 0px;
+    background-image: linear-gradient(60deg, #34d0db, #00d9ff);
+    transition: box-shadow 0.1s linear;
+    padding: 5px 10px;
+    &:hover {
+      background-image: linear-gradient(60deg, #00cbda, #939df8);
+    }
+  }
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  min-height: 18vh;
+  width: 400px;
+
+  label {
+    font-size: 0.9rem;
+    width: 400px;
+  }
+
+  input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 0px 1px rgba(23, 180, 180, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.1s ease-in-out;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    width: 400px;
+    // color: #00cbda;
+  }
+
+  input:focus {
+    box-shadow: 0px 0px 0px 1px #34d0db;
+  }
+
+  input::placeholder {
+    color: #bfbfbf;
+  }
+
+  .btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 100px;
+    border: 0px;
+    background-image: linear-gradient(60deg, #34d0db, #00d9ff);
+    height: 50px;
+    width: 150px;
+    transition: box-shadow 0.1s linear;
+    &:hover {
+      background-image: linear-gradient(60deg, #00cbda, #939df8);
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .loginContainer {
+    input,
+    label {
+      width: 70% !important;
+    }
+  }
+
+  .headerContainer {
+    flex-direction: column;
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+
+  background-image: linear-gradient(-225deg, #fcf3ff 0%, #ffffff 100%);
+  border-radius: 50px;
+  box-shadow: 0 1px 2px #cfcfcf;
+  width: 85%;
+  min-height: 30vh;
+  padding: 2rem 0;
+}

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "dateformat": "^5.0.3",
+    "encoding": "^0.1.13",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.17",
     "firebase": "^10.1.0",
@@ -19,10 +20,10 @@
     "react": "18.2.0",
     "react-datepicker": "^4.16.0",
     "react-dom": "18.2.0",
-    "react-hot-toast": "^2.4.1"
+    "react-hot-toast": "^2.4.1",
+    "react-loader-spinner": "^5.3.4"
   },
   "devDependencies": {
     "sass": "^1.65.1"
-
   }
 }
